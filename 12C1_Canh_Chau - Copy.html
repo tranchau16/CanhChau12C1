@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Làng Chài Mũi Né</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        to bottom,
+        #0288d1,
+        #4fc3f7,
+        #e1f5fe
+    );
+    color: #013243;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+header p {
+    font-style: italic;
+    color: #e0f7fa;
+}
+
+/* SECTION */
+section {
+    margin-bottom: 40px;
+}
+
+.bg-light {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.bg-dark {
+    background: #01579b;
+    color: white;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+/* IMPORTANT */
+#important {
+    background: #ff7043;
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.card h3 {
+    color: #ff6f00;
+    margin: 12px 0 6px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #444;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #0288d1;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #01579b;
+}
+
+/* FORM */
+form {
+    max-width: 380px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0288d1;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #01579b;
+}
+
+/* HOTLINE */
+.hotline {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e53935;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.hotline:hover {
+    transform: scale(1.08);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Làng Chài Mũi Né</h1>
+    <p>Vẻ đẹp bình dị – Văn hóa – Trải nghiệm biển</p>
+</header>
+
+<section class="bg-light">
+    <p><b>Làng chài Mũi Né</b> là điểm đến nổi tiếng với thuyền thúng,
+    bình minh rực rỡ và hải sản tươi ngon.</p>
+</section>
+
+<div id="important">
+    🌅 Thời gian tham quan đẹp nhất: 5h00 – 7h30 sáng
+</div>
+
+<section>
+    <h2>Điểm du lịch nổi bật</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <h3>Bình minh làng chài</h3>
+            <p>Khoảnh khắc biển thức giấc.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://sgtourism.vn/wp-content/uploads/2022/12/kham-pha-lang-chai-mui-ne.jpg">
+            <h3>Hải sản tươi sống</h3>
+            <p>Vừa cập bờ – tươi ngon.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://media.loveitopcdn.com/41316/kcfinder/upload//images/hoang-hon-tuyet-dep-tai-lang-chai-mui-ne.jpg">
+            <h3>Chợ làng chài</h3>
+            <p>Nhộn nhịp – đậm chất biển.</p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-dark">
+    <h2>Đặc sản & Hoạt động</h2>
+    <p>🐟 Mực một nắng – cá nướng</p>
+    <p>🦀 Ghẹ hấp – sò nướng</p>
+    <p>📸 Check-in bình minh</p>
+</section>
+
+<section>
+    <h2>Gallery check-in</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <img src="https://longvanlimousine.vn/wp-content/uploads/2024/08/check-in-bau-trang.jpg">
+        <img src="https://media.loveitopcdn.com/41316/kcfinder/upload//images/tour-bau-trang-doi-cat-bay-lang-chai-suoi-tien-18-768x960.jpg">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+    </div>
+</section>
+
+<section>
+    <h2>Đặt tour tham quan</h2>
+    <form onsubmit="return submitForm()">
+        <input type="text" id="name" placeholder="Họ tên">
+        <input type="email" id="email" placeholder="Email">
+        <button>Đặt tour ngay</button>
+    </form>
+</section>
+
+<div class="hotline">
+    📞 Hotline: 0909 123 456
+</div>
+
+<script>
+function submitForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    if (name === "" || email === "") {
+        alert("Vui lòng nhập đầy đủ thông tin!");
+        return false;
+    }
+    alert("Cảm ơn " + name + "! Chúng tôi sẽ liên hệ sớm 🌊");
+    return false;
+}
+</script>
+
+</body>
+</html>
+<footer class="footer">
+  <p>
+    Liên hệ: email@example.com | Số điện thoại: 0123-456-789
+  </p>
+
+  <p>
+    © 2025 Công ty ABC. All rights reserved.
+  </p>
+
+  <p class="footer-links">
+    <a href="#">Chính sách bảo mật</a> |
+    <a href="#">Điều khoản sử dụng</a>
+  </p>
+</footer>
